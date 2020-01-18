@@ -154,7 +154,7 @@ declare module Types {
         cancel(id: string): Grid<Entity, Params>; 
         clear(showNotFoundText?: boolean): Grid<Entity, Params>;
         collapseAll(): Grid<Entity, Params>; 
-        count(): number;
+        count(includeAllRecords?: boolean): number;
         destroy(keepTableTag?: boolean, keepWrapperTag?: boolean): void;
         downloadCSV(filename?: string, includeAllRecords?: boolean): Grid<Entity, Params>;
         edit(id: string): Grid<Entity, Params>;
